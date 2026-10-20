@@ -7,7 +7,7 @@ The script deliberately separates two concepts that were mixed in the original w
 1. `celltype` contains the marker-based manual annotations assigned after each library was processed and clustered independently. The reviewed labels are imported from the deposited annotation tables by barcode so that the manuscript table and composition figure can be reproduced exactly even if a future Seurat version changes cluster numbering.
 2. `integrated_cluster` is generated after all eight libraries are merged and integrated with Harmony. It is used for the joint UMAP and technical assessment of integration, but it does not overwrite the independently assigned `celltype`.
 
-Only `celltype` is exported as the biological cell-type annotation. The original notebook's `celltype_fine` field is not used.
+Only `celltype` is exported as the biological cell-type annotation. 
 
 ## Input files
 
