@@ -33,7 +33,7 @@ Place the eight corresponding annotation files in the same directory:
 - `PBMC_5prime-2_10x_cell_annotations.tsv.gz`
 - `PBMC_5prime-2_Tn5_cell_annotations.tsv.gz`
 
-A validated local copy of these eight reviewed tables is included in `input_cell_annotations/`. For a local run, copy or symlink them into the same input directory as the eight matrix archives. They contain `celltype` and do not contain `celltype_fine`.
+A validated local copy of these eight reviewed tables is included in `input_cell_annotations/`. For a local run, copy or symlink them into the same input directory as the eight matrix archives.
 
 Each archive must contain `barcodes.tsv.gz`, `features.tsv.gz`, and `matrix.mtx.gz`. The script extracts each archive into a temporary directory and does not alter the deposited files.
 
@@ -123,7 +123,7 @@ The exported `celltype` values are:
 - Naive CD4+ T
 - Platelet
 
-The original cluster-to-cell-type mappings are written to `tables/reported_cluster_to_celltype_mapping.tsv` for auditability. They are taken from the marker-based manual annotations in the original analysis notebook beginning on 31 August 2026. Because cluster numbering is version-sensitive, the script does not automatically apply these historical mappings to newly calculated clusters; it imports the reviewed per-cell labels from the deposited annotation files instead.
+The original cluster-to-cell-type mappings are written to `tables/reported_cluster_to_celltype_mapping.tsv` for auditability. Because cluster numbering is version-sensitive, the script does not automatically apply these historical mappings to newly calculated clusters; it imports the reviewed per-cell labels from the deposited annotation files instead.
 
 ## QC boundary audit
 
